@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>PASSWORD GENRATER</h1>
+
+        <div class="display_container">
+            
+            
+            <input readonly placeholder="Password" class="display" data-PasswordDisplay>
+            
+            
+            <button data-copy class="copybtn">
+                
+                <span data-copypassword class="tooltip"> </span>
+                
+                <img src="images/copy.svg" alt="copy" width="23" height="23">
+            
+            </button>
+        
+        
+        </div>
+
+        <div class="input_container">
+
+
+            <!--Password Length-->
+            <div class="length_container">
+
+                <p>Password Length</p>
+                <p data-lengthnumber></p>
+
+            </div>
+
+            <!--slider-->
+            <input type="range" min="1" max="20" class="slider" data-lengthSlider step="1">
+
+            <!--Checkboxes-->
+            <div class="check">
+                <input type="checkbox" id="Uppercase">
+                <label for="Uppercase">Include Uppercase letters</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="Lowercase">
+                <label for="Lowercase">Include Lowercase Letters</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="Numbers">
+                <label for="Numbers">Include Numbers</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="Symbols">
+                <label for="Symbols">Include Symbols</label>
+            </div>
+
+            <!--Strength section-->
+            <div class="strength-container">
+                <p>strength</p>
+                <div class="indicator" data-indecator></div>
+            </div>
+
+            <!--Genrator-->
+            <Button class="Genratebutton">
+                Genrate Password
+            </Button>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
